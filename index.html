@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Jogo Jokenpo</title>
+</head>
+
+<body>
+  <header>
+    <h1>Jogo Jokenpo</h1>
+  </header>
+
+  <main>
+    <section>
+      <h3>Resultado: você: <samp class="your-points">0</samp> / computador: <samp class="computer-points">0</samp></h3>
+
+      <section class="place-answers">
+
+        <section class="results">
+          <h5 class="player-result"></h5>
+          <button class="btn-option" id="your-answer"></button>
+        </section>
+
+        <section class="results">
+          <h5 class="computer-result"></h5>
+          <button class="btn-option" id="computer-answer"></button>
+        </section>
+
+      </section>
+      <h1 class="winner"></h1>
+    </section>
+
+    <section>
+      <h3>Faça sua jogada!</h3>
+      <section class="button-container">
+        <button class="btn-option" id="bnt-stone"><img src="fotos/pedra.jpg" alt="pedra"></button>
+        <button class="btn-option" id="btn-paper"><img src="fotos/papel.jpg" alt="papel"></button>
+        <button class="btn-option" id="btn-scissors"><img src="fotos/tesoura.jpg" alt="tesoura"></button>
+      </section>
+    </section>
+    
+    <button class="btn-clean">Limpar</button>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
