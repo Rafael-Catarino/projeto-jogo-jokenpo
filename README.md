@@ -4,5 +4,5 @@ Esse projeto foi desenvolvido para treinar o conteúdo que venho aprendendo em H
 
 ***
 
-![jogada ganha](fotos/jokenpo-ganhou.png)
+![inicio do jogo](fotos/jokenpo-ganhou.png)
 
