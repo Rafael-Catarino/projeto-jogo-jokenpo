@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: linear-gradient(45deg, #87b091, #c4d4ab, #e0e0b6);
     text-align: center;
@@ -6,19 +11,30 @@ body {
 }
 
 h1 {
+    margin: 10px;
     font-size: 45px;
 }
 
-.btn-option {
-    background-color: white;
-    margin: 3px;
-    padding: 3px;
+h3 {
+    margin: 20px 8px;
+}
+
+.place-answers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .results {
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.158);
     display: inline-block;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
     border-radius: 10px;
+    margin: 5px;
     width: 220px;
     height: 180px;
 }
@@ -32,5 +48,12 @@ h1 {
 }
 
 .computer-points {
-    color: rgb(211, 100, 57)
+    color: rgb(211, 100, 57);
+}
+
+@media (max-width:476px) {
+    .results {
+        width: 150px;
+        height: 180px;
+    }
 }

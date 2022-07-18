@@ -1,13 +1,29 @@
 const comput = ['pedra', 'papel', 'tesoura'];
+const btnsPlay = document.querySelectorAll('.btn-option');
 
+const startGame = () => {
+  const result = event.target.alt;
+  checkComputerResponse();
+  checkYourAnswer();
+  yourAnswer(result);
+  computerPlaying(result);
+}
 
-const bntStone = document.querySelector('#bnt-stone');
+const btnStartGame = () => {
+  for (let i = 0; i < btnsPlay.length; i++) {
+    btnsPlay[i].addEventListener('click', startGame);
+  }
+}
+
+btnStartGame()
+
+/* const bntStone = document.querySelector('#bnt-stone');
 bntStone.addEventListener('click', () => {
   checkComputerResponse();
   checkYourAnswer();
   yourAnswer('pedra');
   computerPlaying('pedra');
-});
+}); */
 
 function checkComputerResponse() {
   const btnComputerAnswe = document.querySelector('#computer-answer');
@@ -21,21 +37,23 @@ function checkYourAnswer() {
   if (imgYourAnswer) imgYourAnswer.remove();
 }
 
-const btnPaper = document.querySelector('#btn-paper');
+// Refatorando o código
+
+/* const btnPaper = document.querySelector('#btn-paper');
 btnPaper.addEventListener('click', () => {
   checkComputerResponse();
   checkYourAnswer();
   yourAnswer('papel');
   computerPlaying('papel');
-});
+}); */
 
-const btnScissors = document.querySelector('#btn-scissors');
+/* const btnScissors = document.querySelector('#btn-scissors');
 btnScissors.addEventListener('click', () => {
   checkComputerResponse();
   checkYourAnswer();
   yourAnswer('tesoura');
   computerPlaying('tesoura');
-});
+}); */
 
 function computerPlaying(result) {
   const num = Math.floor(Math.random() * 3);
